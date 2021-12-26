@@ -1,0 +1,185 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ced0d3;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    background: #3498db;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 130px auto 100px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
+    font-size: 14px;
+    /* z-index: 1; */
+}
+
+.Logo {
+    margin: 0 5px;
+}
+
+.logoEPC img {
+    margin-left: 5px;
+}
+
+.Logo a{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Logo figure {
+    margin: 5px 0 0 0;
+}
+/* HEADER */
+
+/* CONTAINER */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 2rem;
+    padding: 0 30px;
+}
+
+.container-form {
+    max-width: 500px;
+    background-color: #3498db;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.improve-future {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #174665;
+}
+.improve-future img {
+    width: 50px;
+}
+.improve-future p {
+    font-size: 18px;
+    color: #fff;
+}
+
+
+form p {
+    color: #fff;
+}
+
+#registerName {
+    display: inline;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    width: 233px;
+    
+}
+
+#registerLastName {
+    display: inline;
+    width: 233px;
+    
+}
+
+.email {
+    margin-top: 1rem;
+}
+#registerEmail {
+    display: block;
+    width: 100%;
+}
+
+
+input {
+    /* -webkit-appearance: none; */
+    border-radius: 5px;
+    height: 35px;
+    /* margin: 0 auto 20px auto; */
+    padding-left: 5px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #000;
+}
+
+.agree {
+    color: #fff;
+}
+.agree a {
+    color: #01257d;
+}
+
+
+.registerButton {
+    display: block;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #68DA6C;
+    color: #000;
+    border: none;
+    border-bottom: 4px solid #0b5a1c;
+    margin: 40px auto 10px auto;
+}
+.registerButton:hover {
+    background-color: #46f04b;
+    border-bottom: 4px solid #2cd431;
+    transition: .3s;
+}
+
+
+
+.login {
+    text-align: center;
+    color: #fff;
+}
+.login a {
+    color: #fff;
+}
+
+/* CONTAINER */
+
+
+
+
+@media (max-width:700px) {
+    body {
+        background-color: #3498db;
+    }
+
+    .container {
+        margin-top: 1rem;
+    }
+
+    .container-form {
+        padding: 0;
+    }
+
+    #registerName, #registerLastName {
+        width: 100%;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+    }
+}

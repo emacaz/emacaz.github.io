@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ced0d3;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    background: #3498db;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 130px auto 100px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
+    font-size: 14px;
+    /* z-index: 1; */
+}
+
+.Logo {
+    margin: 0 5px;
+}
+
+.logoEPC img {
+    margin-left: 5px;
+}
+
+.Logo a{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Logo figure {
+    margin: 5px 0 0 0;
+}
+/* HEADER */
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 6rem;
+}
+
+.container-form {
+    /* background-color: #2879AF; */
+    background-color: #3498db;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 8px 19px 0 rgb(3 9 30 / 60%);
+}
+
+.container-form img {
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 2rem 0 2.5rem 0;
+    color: #fff;
+}
+
+input {
+    display: block;
+    /* -webkit-appearance: none; */
+    border-radius: 5px;
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    color: #000;
+}
+
+#checkId {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    display: inline;
+    background-color: white;
+}
+
+.loginButton {
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 300px;
+    border-radius: 5px;
+    background-color: #68DA6C;
+    color: #000;
+    border: none;
+    border-bottom: 4px solid #0b5a1c;
+    margin: 20px auto;
+}
+.loginButton:hover {
+    background-color: #46f04b;
+    border-bottom: 4px solid #2cd431;
+    transition: .3s;
+}
+
+
+form label {
+    color: #fff;
+}
+form a {
+    color: #fff;
+    margin-left: 20px;
+}
+
+
+.accountCreate {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+}
+.accountCreate span {
+    margin: 15px 0;
+}
+.accountCreate a {
+    color: #fff;
+    text-decoration: none;
+    width: 320px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #0a1e35;
+    border: 1px solid white;
+    margin: auto;
+}
+.accountCreate a:hover {
+    background-color: #2879AF;
+}
+
+
+
+
+
+@media (max-width:480px) {
+    body {
+        background-color: #2879AF;
+    }
+    .container {
+        justify-content: start;
+        margin-top: 6rem;
+    }
+    .container-form {
+        background-color: unset;
+        padding: 0;
+        box-shadow: unset;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    form a {
+        margin-left: 7px;
+    }
+
+    .accountCreate a {
+        width: 300px;
+    }
+}
