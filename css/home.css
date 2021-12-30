@@ -88,3 +88,48 @@ header label:hover {
 }
 /* HEADER */
 
+
+
+
+
+
+
+
+/*----Screen for 768px or less------*/
+@media (max-width:768px){
+    
+
+    /* HEADER */
+    header {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        margin: 52px -100%;
+        background-color: #2879af;
+        width: 100%;
+        z-index: 1;
+        top: 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu li {
+        border-top: 1px solid #000;
+        border-radius: 0;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 52px 0;
+    }
+    /* HEADER */
+}
