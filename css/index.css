@@ -969,6 +969,7 @@ header label:hover {
 .Footer-language img {
     height: 100%;
 }
+/* FOOTER */
 
 
 
@@ -1054,6 +1055,7 @@ header label:hover {
     .clear input {
         width: 100%;
     }
+    /* FOOTER */
 }
 
 
@@ -1140,6 +1142,7 @@ header label:hover {
     .mc-field-group input::placeholder {
         text-align: center;
     }
+    /* FOOTER */
 }
 
 
@@ -1318,7 +1321,7 @@ header label:hover {
     }
 
 
-    /* FOOTER SECTION */
+    /* FOOTER */
     .Footer-wrapper {
         padding-top: 20px;
     }
@@ -1362,6 +1365,7 @@ header label:hover {
     .Footer-bottom {
         flex-direction: column;
     }
+    /* FOOTER */
 }
 
 
@@ -1403,6 +1407,7 @@ header label:hover {
     .Footer-menu-ul li {
         padding: 7px;
     }
+    /* FOOTER */
 }
 
 
