@@ -18,7 +18,7 @@ header {
     background: #3498db;
     align-items: center;
     display: grid;
-    grid-template-columns: 130px auto 100px;
+    grid-template-columns: 130px auto;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
     font-size: 14px;
     z-index: 1;
@@ -45,7 +45,8 @@ header {
 header label {
     display: none;
     justify-self: end;
-    padding-right: 10px;
+    padding-right: 20px;
+    text-decoration: underline;
 }
 
 header label:hover {
@@ -74,17 +75,28 @@ header label:hover {
     text-decoration: none;
 }
 
-.LoginButton a {
+.perfilButton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 5px;
+}
+.perfilButton a {
+    text-align: center;
     text-decoration: none;
     color: #000;
     background-color: #00d86a;
-    border-radius: 8px;
+    border-radius: 3px;
     padding: 5px 5px;
 }
 
-.LoginButton a:hover {
+.perfilButton a:hover {
     background-color: #fcfb1e;
     transition: .4s;
+}
+
+.perfilButton img {
+    width: 40%;
 }
 /* HEADER */
 
@@ -112,7 +124,7 @@ header label:hover {
     .menu {
         position: absolute;
         margin: 52px -100%;
-        background-color: #2879af;
+        background-color: #1d5981;
         width: 100%;
         z-index: 1;
         top: 0px;
