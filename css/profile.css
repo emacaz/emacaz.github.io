@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #68B8ED;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    background: #3498db;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 130px auto;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
+    font-size: 14px;
+    z-index: 1;
+}
+
+.Logo {
+    margin: 0 5px;
+}
+
+.Logo a{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Logo figure {
+    margin: 0;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    justify-self: end;
+    padding-right: 20px;
+    text-decoration: underline;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.menu ul {
+    margin: 0 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .4s;
+}
+.menu li {
+    border-radius: 8px;
+}
+.menu li a {
+    display: block;
+    padding: 8px 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+
+/* U-WRAPPER */
+.u-wrapper {
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto!important;
+    padding: 0 1em;
+    position: relative;
+}
+/* U-WRAPPER */
+
+
+/*----Screen for 768px or less------*/
+@media (max-width:768px){
+    
+
+    /* HEADER */
+    header {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        margin: 52px -100%;
+        background-color: #1d5981;
+        width: 100%;
+        z-index: 1;
+        top: 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu li {
+        border-top: 1px solid #000;
+        border-radius: 0;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 52px 0;
+    }
+    /* HEADER */
+}
