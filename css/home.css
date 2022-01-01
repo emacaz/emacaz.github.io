@@ -78,7 +78,6 @@ header label:hover {
 }
 .menu ul li:nth-child(5) {
     border: 1px solid black;
-    
 }
 .menu ul li:nth-child(5):hover {
     background-color: #E3432D;
@@ -448,7 +447,6 @@ header label:hover {
 
 /*----Screen for 768px or less------*/
 @media (max-width:768px){
-    
 
     /* HEADER */
     header {
@@ -477,6 +475,11 @@ header label:hover {
     .menu li {
         border-top: 1px solid #000;
         border-radius: 0;
+        margin-left: 0;
+    }
+
+    .menu ul li:nth-child(5){
+        border-left: unset;
     }
 
     #btn-menu:checked ~ .menu {
