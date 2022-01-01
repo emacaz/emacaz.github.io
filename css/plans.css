@@ -1,0 +1,308 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #174665;
+}
+
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    background: #3498db;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 130px auto;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 45%);
+    font-size: 14px;
+}
+
+.Logo {
+    margin: 0 5px;
+}
+
+.Logo a{
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+.Logo figure {
+    margin: 0;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header label {
+    display: none;
+    justify-self: end;
+    padding-right: 20px;
+    text-decoration: underline;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+.menu ul {
+    margin: 0 20px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .4s;
+}
+.menu li {
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.menu li a {
+    display: block;
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu ul li:nth-child(5) {
+    border: 1px solid black;
+}
+.menu ul li:nth-child(5):hover {
+    background-color: #E3432D;
+}
+
+
+/* U-WRAPPER */
+.u-wrapper {
+    margin: auto;
+    padding-bottom: 3rem;
+}
+
+
+/* PLANS */
+.hero-christmas {
+    background-image: url("./images/epc-planes-hero-section-christmas2.png");
+    background-color: #2879af;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    min-height: 742px;
+    color: #fff;
+    position: relative;
+}
+
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+}
+
+.hero-title h1 {
+    color: #fff;
+    text-align: center;
+}
+
+.PriceCard-container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.PriceCard {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #000;
+    border-radius: 12px;
+    padding: 1rem;
+    min-height: 520px;
+    height: auto;
+    width: 100%;
+}
+
+.PriceCard-recommended {
+    margin: 0 3rem;
+    background: #3498db;
+}
+
+.PriceCard-planInfo {
+    color: #fff;
+    text-align: center;
+}
+.PriceCard-planInfo h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#countdown {
+    border-radius: 4px;
+    color: #000;
+    background: rgb(209,235,24);
+    background: linear-gradient(82deg, rgba(209,235,24,1) 49%, rgba(253,29,29,1) 93%, rgba(252,69,69,1) 100%);
+}
+
+
+.PriceCard-description {
+    margin: 0;
+    color: #becde3;
+    font-size: .875rem;
+    line-height: 1.4;
+}
+.PriceCard-pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.PriceCard-pricing img {
+    height: 1.55rem;
+}
+
+.PriceCard-price {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.4;
+}
+.PriceCard-price-frequency {
+    font-size: 1.25rem;
+    color: #becde3;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.PriceCard-benefits-list {
+    text-decoration: none;
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    gap: 5pt;
+}
+.PriceCard-benefits-list li {
+    font-size: 15px;
+    color: #eff3f8;
+    font-weight: 400;
+    letter-spacing: .25px;
+    line-height: 1.4;
+    margin-right: .25rem;
+}
+.PriceCard-benefits-list li::before {
+    content: url("./images/checked-symbol.png");
+    vertical-align: middle;
+}
+
+.PriceCard-button a {
+    text-decoration: none;
+    background-color: #00d86a;
+    color: #000;
+    border-radius: .5rem;
+    padding: 8px 50px;
+}
+.PriceCard-button a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.BN-ticket {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 46px;
+    right: 23px;
+}
+.BN-ticket img {
+    width: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-contact p {
+    color: #fff;
+    font-size: 13px;
+}
+.hero-contact a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+@media (max-width:768px){
+    
+
+    /* HEADER */
+    header {
+        position: relative;
+        z-index: 1;
+    }
+    
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        margin: 52px -100%;
+        background-color: #2879af;
+        width: 100%;
+        z-index: 1;
+        top: 0px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu li {
+        border-top: 1px solid #000;
+        border-radius: 0;
+    }
+
+    .menu ul li:nth-child(5){
+        border-left: unset;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 52px 0;
+    }
+
+
+
+
+    /* PLANES */
+    .PriceCard-container {
+        flex-direction: column;
+    }
+
+    .PriceCard-recommended {
+        margin: 2rem 0;
+    }
+}
+
+
+
+
