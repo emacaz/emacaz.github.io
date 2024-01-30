@@ -1,9 +1,0 @@
-[submodule "moversefoundation"]
-	path = moversefoundation
-	url = git@github.com:emacaz/moversefoundation.git
-[submodule "emanuelcastillo"]
-	path = emanuelcastillo
-	url = git@github.com:emacaz/emanuelcastillo.git
-[submodule "ML-ProgrammingCourse"]
-	path = ML-ProgrammingCourse
-	url = git@github.com:emacaz/ML-ProgrammingCourse.git
