@@ -8,7 +8,7 @@ import TrackVisibility from "react-on-screen";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Software Engineer", "FullStack Dev",];
+  const toRotate = ["Software Engineer", "FullStack Dev"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 1000;
@@ -60,19 +60,22 @@ export const Banner = () => {
                 >
                   <span className="tagline">Portfolio</span>
                   <h1>
-                    {`Hi I'm Emanuel Castillo - `}
+                    {`Hi, I'm Enmanuel - `}
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
                     {" "}
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-                    quibusdam aliquam sit neque itaque saepe cupiditate
-                    repudiandae quisquam? Voluptatem iure quidem iusto delectus
-                    quibusdam deserunt sapiente ipsam itaque laudantium
-                    mollitia.{" "}
+                    Senior FullStack Developer with 6 years in Python, expert in
+                    RESTful APIs, event-driven systems, and AWS, including
+                    Serverless and DynamoDB. Proficient in Git, Python,
+                    JavaScript, Java, and blockchain. Experienced in
+                    database-API integrations and TypeScript. Skilled at leading
+                    projects, managing tight deadlines in fast-paced
+                    environments, and adapting to diverse team projects. Fluent
+                    in technical English, both written and spoken.{" "}
                   </p>
                   <button onClick={() => console.log("Connect")}>
-                    Let's connect <ArrowRightCircle size={25} />
+                    Contact me <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}

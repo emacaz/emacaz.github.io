@@ -1,7 +1,7 @@
 export const MailchimpForm = () => {
   return (
     <section>
-      <p>Here it might be MailchimpForm</p>
+      <p>Conctact me</p>
     </section>
   );
 };

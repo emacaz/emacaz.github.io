@@ -9,8 +9,8 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Personal Website",
+      description: "Development",
       imgUrl: projImg1,
     },
     {
@@ -53,11 +53,11 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Discover a collection of my professional projects,
+                    highlighting my expertise in software development across
+                    various challenges and solutions. Each entry details the
+                    project's scope, technologies used, my contributions, and
+                    key achievements.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -66,14 +66,14 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Page 1</Nav.Link>
+                      </Nav.Item>
+                      {/* <Nav.Item>
+                        <Nav.Link eventKey="second">Page 2</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                      </Nav.Item>
+                        <Nav.Link eventKey="third">Page 3</Nav.Link>
+                      </Nav.Item> */}
                     </Nav>
                     <Tab.Content
                       id="slideInUp"
