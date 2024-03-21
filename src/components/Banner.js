@@ -60,7 +60,7 @@ export const Banner = () => {
                 >
                   <span className="tagline">Portfolio</span>
                   <h1>
-                    {`Hi, I'm Enmanuel - `}
+                    {`I'm Enmanuel - `}
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>

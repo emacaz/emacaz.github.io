@@ -1,7 +1,7 @@
 export const MailchimpForm = () => {
   return (
     <section>
-      <p>Conctact me</p>
+      <p>Conctact: me@EmanuelCastillo.com</p>
     </section>
   );
 };

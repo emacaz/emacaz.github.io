@@ -10,32 +10,17 @@ export const Projects = () => {
   const projects = [
     {
       title: "Personal Website",
-      description: "Development",
+      description: "EmanuelCastillo.com",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "English Learning Platform",
+      description: "izipiziCourse.com",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Educational Online Platform",
+      description: "MyLearny.com",
       imgUrl: projImg3,
     },
   ];
