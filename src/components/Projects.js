@@ -4,6 +4,8 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
 import TrackVisibility from "react-on-screen";
 
 export const Projects = () => {
@@ -22,6 +24,16 @@ export const Projects = () => {
       title: "Educational Online Platform",
       description: "MyLearny.com",
       imgUrl: projImg3,
+    },
+    {
+      title: "Fundación de Panamá Moverse",
+      description: "Fundación Panameña",
+      imgUrl: projImg4,
+    },
+    {
+      title: "Instagram-like App",
+      description: "Development",
+      imgUrl: projImg5,
     },
   ];
   return (
