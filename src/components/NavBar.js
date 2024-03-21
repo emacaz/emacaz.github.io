@@ -5,7 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
-export const NavBar = () => {
+export const NavBar = ({ footerRef }) => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -28,6 +28,10 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
+  const scrollToFooter = () => {
+    footerRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
@@ -49,7 +53,7 @@ export const NavBar = () => {
               <a href="https://www.facebook.com/emacastillozam/" target="_blank"><img src={navIcon2} alt="" /></a>
               <a href="https://www.instagram.com/emacastillozam/" target="_blank"><img src={navIcon3} alt="" /></a>
             </div>
-            <button className="vvd" onClick={() => console.log('connect')}>
+            <button className="vvd" onClick={scrollToFooter}>
               <span>Contact me</span>
             </button>
           </span>

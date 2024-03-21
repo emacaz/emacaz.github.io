@@ -5,7 +5,7 @@ import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-export const Banner = () => {
+export const Banner = ({ footerRef }) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ["Software Engineer", "FullStack Dev"];
@@ -46,6 +46,10 @@ export const Banner = () => {
     }
   };
 
+  const scrollToFooter = () => {
+    footerRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -74,7 +78,7 @@ export const Banner = () => {
                     environments, and adapting to diverse team projects. Fluent
                     in technical English, both written and spoken.{" "}
                   </p>
-                  <button onClick={() => console.log("Connect")}>
+                  <button onClick={scrollToFooter}>
                     Contact me <ArrowRightCircle size={25} />
                   </button>
                 </div>
