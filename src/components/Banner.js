@@ -48,6 +48,7 @@ export const Banner = ({ footerRef }) => {
 
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: "smooth" });
+    // Hide menu
   };
 
   return (
@@ -64,7 +65,7 @@ export const Banner = ({ footerRef }) => {
                 >
                   <span className="tagline">Portfolio</span>
                   <h1>
-                    {`I'm Enmanuel - `}
+                    {`I'm Emanuel, `}
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>

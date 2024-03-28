@@ -277,6 +277,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
+  min-height: 270px;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
