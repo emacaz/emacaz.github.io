@@ -30,6 +30,7 @@ export const NavBar = ({ footerRef }) => {
 
   const scrollToFooter = () => {
     footerRef.current.scrollIntoView({ behavior: 'smooth' });
+    // Hide menu
   };
 
   return (
