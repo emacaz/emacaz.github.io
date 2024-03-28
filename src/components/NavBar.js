@@ -50,9 +50,9 @@ export const NavBar = ({ footerRef }) => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/emacastillozam/" target="_blank"><img src={navIcon1} alt="" /></a>
-              <a href="https://www.facebook.com/emacastillozam/" target="_blank"><img src={navIcon2} alt="" /></a>
-              <a href="https://www.instagram.com/emacastillozam/" target="_blank"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.linkedin.com/in/emacastillozam/" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="" /></a>
+              <a href="https://www.facebook.com/emacastillozam/" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
+              <a href="https://www.instagram.com/emacastillozam/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="" /></a>
             </div>
             <button className="vvd" onClick={scrollToFooter}>
               <span>Contact me</span>

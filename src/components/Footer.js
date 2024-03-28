@@ -21,19 +21,19 @@ export const Footer = forwardRef((props, ref) => {
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/emacastillozam/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src={navIcon1} alt="" />
               </a>
               <a
                 href="https://www.facebook.com/emacastillozam/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src={navIcon2} alt="" />
               </a>
               <a
                 href="https://www.instagram.com/emacastillozam/"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer"
               >
                 <img src={navIcon3} alt="" />
               </a>
